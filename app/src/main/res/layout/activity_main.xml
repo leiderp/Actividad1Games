@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="onClickMostrar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="El juego de la memoria"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/puntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Puntos: 0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/iv_11"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="1_1-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_12"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="1_2-3"
+        app:layout_constraintEnd_toStartOf="@+id/iv_13"
+        app:layout_constraintStart_toEndOf="@+id/iv_11"
+        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_13"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="1_3-4"
+        app:layout_constraintEnd_toStartOf="@+id/iv_14"
+        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_31"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="3_1-2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_21"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_32"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="3_2-1"
+        app:layout_constraintEnd_toStartOf="@+id/iv_33"
+        app:layout_constraintStart_toEndOf="@+id/iv_31"
+        app:layout_constraintTop_toBottomOf="@+id/iv_22"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_33"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="3_3-4"
+        app:layout_constraintEnd_toStartOf="@+id/iv_34"
+        app:layout_constraintTop_toBottomOf="@+id/iv_23"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_34"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="3_4-5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_23"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_21"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="2_1-6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_11"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_14"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="1_4-2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_22"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="2_2-5"
+        app:layout_constraintEnd_toStartOf="@+id/iv_23"
+        app:layout_constraintStart_toEndOf="@+id/iv_21"
+        app:layout_constraintTop_toBottomOf="@+id/iv_12"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_24"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="2_4-3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_14"
+        app:srcCompat="@drawable/signo1" />
+
+    <ImageView
+        android:id="@+id/iv_23"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onClickMostrar"
+        android:tag="2_3-6"
+        app:layout_constraintEnd_toStartOf="@+id/iv_24"
+        app:layout_constraintTop_toBottomOf="@+id/iv_13"
+        app:srcCompat="@drawable/signo1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@drawable/reloard"
+        android:onClick="onClickReiniciar"
+        app:layout_constraintBottom_toTopOf="@+id/puntaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
