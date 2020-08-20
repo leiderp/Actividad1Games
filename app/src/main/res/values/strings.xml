@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Juego de la memoria</string>
+    <string name="app_name">Memory Game</string>
+    <string name="Score">Score: 0</string>
 </resources>

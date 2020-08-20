@@ -1,4 +1,4 @@
-package com.jcabarique.juegodelamemoria
+package com.leiderp.MemoryGame
 
 import org.junit.Test
 

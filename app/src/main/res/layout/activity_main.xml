@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
+    android:focusable="true"
     android:onClick="onClickMostrar"
     tools:context=".MainActivity">
 
@@ -13,46 +14,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="El juego de la memoria"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/puntaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Puntos: 0"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/logo" />
 
     <ImageView
         android:id="@+id/iv_11"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="28dp"
         android:clickable="true"
+        android:contentDescription="TODO"
         android:onClick="onClickMostrar"
         android:tag="1_1-1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
@@ -60,81 +40,83 @@
         android:layout_width="80sp"
         android:layout_height="80sp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="1_2-3"
         app:layout_constraintEnd_toStartOf="@+id/iv_13"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toEndOf="@+id/iv_11"
-        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_13"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="76dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="1_3-4"
-        app:layout_constraintEnd_toStartOf="@+id/iv_14"
-        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_31"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="76dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="3_1-2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_22"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_32"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="3_2-1"
-        app:layout_constraintEnd_toStartOf="@+id/iv_33"
-        app:layout_constraintStart_toEndOf="@+id/iv_31"
-        app:layout_constraintTop_toBottomOf="@+id/iv_22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_23"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_33"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="3_3-4"
         app:layout_constraintEnd_toStartOf="@+id/iv_34"
-        app:layout_constraintTop_toBottomOf="@+id/iv_23"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toEndOf="@+id/iv_32"
+        app:layout_constraintTop_toBottomOf="@+id/iv_24"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_34"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="76dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="3_4-5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_23"
+        app:layout_constraintTop_toBottomOf="@+id/iv_31"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
@@ -142,77 +124,95 @@
         android:layout_width="80sp"
         android:layout_height="80sp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="2_1-6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_11"
+        app:layout_constraintEnd_toStartOf="@+id/iv_22"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/iv_14"
+        app:layout_constraintTop_toBottomOf="@+id/iv_12"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_14"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="1_4-2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/puntaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_11"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_22"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="76dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="2_2-5"
-        app:layout_constraintEnd_toStartOf="@+id/iv_23"
-        app:layout_constraintStart_toEndOf="@+id/iv_21"
-        app:layout_constraintTop_toBottomOf="@+id/iv_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_13"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_24"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="2_4-3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_14"
+        app:layout_constraintEnd_toStartOf="@+id/iv_31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_23"
+        app:layout_constraintTop_toBottomOf="@+id/iv_21"
         app:srcCompat="@drawable/signo1" />
 
     <ImageView
         android:id="@+id/iv_23"
         android:layout_width="80sp"
         android:layout_height="80sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:onClick="onClickMostrar"
         android:tag="2_3-6"
-        app:layout_constraintEnd_toStartOf="@+id/iv_24"
-        app:layout_constraintTop_toBottomOf="@+id/iv_13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_14"
         app:srcCompat="@drawable/signo1" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:background="@drawable/reloard"
-        android:onClick="onClickReiniciar"
-        app:layout_constraintBottom_toTopOf="@+id/puntaje"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/puntaje"
+            android:layout_width="288dp"
+            android:layout_height="60dp"
+            android:text="@string/Score"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="60dp"
+            android:background="@drawable/reload"
+            android:onClick="onClickReiniciar" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
