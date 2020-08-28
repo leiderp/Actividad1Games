@@ -3,6 +3,7 @@ package com.leiderp.MemoryGame
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     fun onClickMostrar(view: View) {
         val puntaje: TextView = findViewById(R.id.puntaje)
         val tagView = view.getTag().toString().split("-")
-
         val tag = tagView[0]
         if(tag == anteriorView) {
             intentos = 1;

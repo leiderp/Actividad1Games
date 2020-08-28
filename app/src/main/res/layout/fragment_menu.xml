@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:fontFamily="cursive"
+            android:text="SELECT GAME"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#162EB1"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/button_game1"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:background="@drawable/imggame1"/>
+
+        <Button
+            android:id="@+id/button_game2"
+            style="@android:style/Widget.DeviceDefault.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imggame2" />
+    </LinearLayout>
+</FrameLayout>
